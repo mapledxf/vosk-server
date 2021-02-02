@@ -14,3 +14,6 @@ chatbots, websites and telephony.
 ## Documentation
 
 For documentation and instructions see [Vosk Website](https://alphacephei.com/vosk/server)
+
+docker build -t asr:v1 - < Dockerfile.kaldi-vosk-server
+docker run -p 9998:9998 -v /data/xfding/train_result/asr/ali/model:/opt/model asr:v1 
